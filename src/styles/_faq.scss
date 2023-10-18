@@ -44,9 +44,10 @@
 
                     &__itens {
                         list-style: disc;
+                        transition: heigth, .5s ease;
                     } 
-                }
             }
+        }
 
             &--is-open {
                 .faq__questions__item__question::after {
