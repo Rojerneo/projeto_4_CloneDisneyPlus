@@ -7,6 +7,10 @@
 
     @media (max-width: 768px) {
         padding: 10vw 5vw;
+
+        .button {
+            margin-top: 20px;
+        }
     }
 
     &__list {
@@ -14,11 +18,23 @@
         justify-content: space-around;
         margin-top: 50px;
 
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        
         &__item {
             text-align: center;
             padding: 60px 44px 44px;
             max-width: 380px;
             width: 100%;
+
+            @media (max-width: 768px) {
+                display: block;
+                margin: 0 0 44px 0;
+                padding: 0;
+
+            }
 
             &:nth-child(2) {
                 background: url(../images/fundo_combo_plus.png);
