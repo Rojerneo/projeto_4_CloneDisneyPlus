@@ -5,6 +5,10 @@
         text-align: center;
     }
 
+    @media (max-width: 768px) {
+        padding: 10vw 5vw;
+    }
+
     &__list {
         display: flex;
         justify-content: space-around;

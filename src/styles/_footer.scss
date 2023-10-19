@@ -4,6 +4,10 @@
     padding: 26px 8px;
     text-align: center;
 
+    @media (max-width: 768px) {
+        padding: 10vw 5vw;
+    }
+
     .container {
         max-width: 1024px;
         margin: 0 auto;

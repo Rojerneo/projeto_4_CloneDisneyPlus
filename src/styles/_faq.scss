@@ -1,6 +1,10 @@
 .faq {
     padding: 5.6vw;
 
+    @media (max-width: 768px) {
+        padding: 10vw 5vw;
+    }
+
     h2 {
         text-align: center;
         margin-bottom: 24px;
@@ -20,6 +24,11 @@
                 cursor: pointer;
                 position: relative;
 
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                    padding-right: 60px;
+                }
+
                 &::after {
                     content: '+';
                     position: absolute;
@@ -37,11 +46,11 @@
                 overflow: hidden;
                 padding: 0 24px;
                 transition: heigth, .5s ease;
-
+                
                 &__list {
                     margin-top: 16px;
                     padding-left: 40px;
-
+                    
                     &__itens {
                         list-style: disc;
                         transition: heigth, .5s ease;

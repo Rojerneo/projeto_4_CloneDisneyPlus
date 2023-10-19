@@ -43,32 +43,60 @@ body {
 
 .text--big {
     @include text(18px);
+
+    @media (max-width: 768px) {
+        @include text(16px);
+    }
 }
 
 .text {
     @include text;
+
+    @media (max-width: 768px) {
+        @include text(12px)
+    }
 }
 
 .text--small {
     @include text(12px);
+
+    @media (max-width: 768px) {
+        @include text(10px)
+    }
 }
 
 .link-text {
     @include text(18px);
     color: variaveis.$corTextoSecundario;
     text-decoration: undeline;
+
+    @media (max-width: 768px) {
+        @include text(16px)
+    }
 }
 
 .title--big {
     @include title(44px);
+
+    @media (max-width: 768px) {
+        @include title(26px)
+    }
 }
 
 .title {
     @include title;
+
+    @media (max-width: 768px) {
+        @include title(24px);
+    }
 }
 
 .title--small {
     @include title(28px);
+
+    @media (max-width: 768px) {
+        @include title(26px)
+    }
 }
 
 .button {
@@ -89,6 +117,11 @@ body {
     letter-spacing: 1px;
     border: 1px solid variaveis.$corDeFundoBotaoPrimario;
 
+    @media (max-width: 768px) {
+        height: 40px;
+        font-size: 12px;
+    }
+
     &:hover {
         background-color: lighten(variaveis.$corDeFundoBotaoPrimario, 3%);
     }
@@ -96,6 +129,11 @@ body {
     &--secondary {
         background-color: variaveis.$corDeFundoBotaoSecundario;
         border-color: variaveis.$corDeFundoBotaoSecundario;
+
+        @media (max-width: 768px) {
+            height: 40px;
+            font-size: 12px;
+        }
         
         &:hover {
             background-color: lighten(variaveis.$corDeFundoBotaoSecundario, 3%);
@@ -105,6 +143,11 @@ body {
     &--dark {
         background-color: rgba(variaveis.$corDeFundoBotaoDark, .8);
         border-color: variaveis.$corTextoSecundario;
+
+        @media (max-width: 768px) {
+            height: 40px;
+            font-size: 12px;
+        }
 
         &:hover {
             background-color: variaveis.$corTextoSecundario;
@@ -118,6 +161,16 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+
+    @media (max-width: 768px) {
+        display: block;
+        text-align: center;
+        padding: 10vw 5vw;
+
+        img {
+            margin-bottom: 20px;
+        }
+    }
 
     img {
         max-width: 100%;
@@ -148,6 +201,12 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @media (max-width: 768px) {
+                position: relative;
+                width: 100%;
+                left: 0;
+            }
         }
     }
 }

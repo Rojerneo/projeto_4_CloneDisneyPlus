@@ -3,6 +3,10 @@
 .shows {
     padding: 2vw 5.6vw;
     min-height: 50vw;
+
+    @media (max-width: 768px) {
+        padding: 10vw 5 vw;
+    }
     
     &__tabs {
         display: flex;
@@ -19,6 +23,10 @@
             text-transform: uppercase;
             margin: 0 1vw;
 
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
+
             &--is-active {
                 border-bottom: 5px solid variaveis.$corTextoSecundario;
             }
@@ -30,6 +38,10 @@
         display: none;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
 
         &--is-active {
             display: grid;
